@@ -723,7 +723,7 @@ body {
 
   opacity: 1;
 
-  transition: opacity 2500ms var(--timing-function);
+  transition: opacity 250ms var(--timing-function);
 }
 
 /* invisible modal window */

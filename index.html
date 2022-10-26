@@ -323,6 +323,44 @@
                     height="18">
                     <use href="./img/icons.svg#icon-close"></use>
                 </svg></button>
+            <form class="contact-form">
+                <h2 class="form-title">Залиште свої дані, ми вам передзвонимо</h2>
+
+                <label class="form-label" for="person-name">Ім'я</label>
+                <div class="form-control">
+                    <input class="form-input" id="person-name" type="text" name="person-name">
+                    <svg class="form-icon" width="18px" height="18px">
+                        <use href="./img/icons.svg#icon-person-form"></use>
+                    </svg>
+                </div>
+
+                <label class="form-label" for="person-phone">Телефон</label>
+                <div class="form-control">
+                    <input class="form-input" id="person-phone" type="tel" name="person-phone">
+                    <svg class="form-icon" width="18px" height="18px">
+                        <use href="./img/icons.svg#icon-phone-form"></use>
+                    </svg>
+                </div>
+
+                <label class="form-label" for="person-email">Пошта</label>
+                <div class="form-control">
+                    <input class="form-input" id="person-email" type="email" name="person-email">
+                    <svg class="form-icon" width="18px" height="18px">
+                        <use href="./img/icons.svg#icon-email-form"></use>
+                    </svg>
+                </div>
+
+                <label class="form-label" for="person-comment">Коментар</label>
+                <textarea class="form-textarea" id="person-comment" name="person-comment" placeholder="Введіть текст">
+                </textarea>
+
+                <input class="checkbox-input visually-hidden" id="terms-checkbox" type="checkbox" name="terms-checkbox">
+                <label class="checkbox-label" for="terms-checkbox">Погоджуюся з розсилкою та приймаю <a
+                        class="terms-link" href="#">Умови
+                        договору</a></label>
+
+                <button class="form-button primary-button" type="submit" data-modal-open>Відправити</button>
+            </form>
         </div>
     </div>
     <!-- script modal window -->

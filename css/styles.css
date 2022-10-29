@@ -918,6 +918,10 @@ body {
 }
 
 /* Checkbox */
+.checkbox-input {
+  appearance: none;
+}
+
 .checkbox-label {
   color: var(--secondary-text-color);
 
@@ -933,10 +937,6 @@ body {
   color: var(--accent-color);
 }
 
-.checkbox-input {
-  appearance: none;
-}
-
 .checkbox {
   position: relative;
   margin-bottom: 30px;
@@ -949,16 +949,20 @@ body {
 .checkbox-icon {
   content: "";
   position: absolute;
+  z-index: -1;
+
   fill: var(--primary-white-color);
   fill-opacity: 0;
   top: 50%;
   left: 13px;
   transform: translateY(-50%);
-  z-index: -1;
   width: 16px;
   height: 15px;
   border: 2px solid var(--title-text-color);
   border-radius: 2px;
+
+  /* background-size: contain;
+  background-origin: border-box; */
 
   transition: background-color 250ms var(--timing-function),
     fill-opacity 250ms var(--timing-function);
@@ -967,10 +971,12 @@ body {
 .checkbox-input:checked + .checkbox-icon {
   background-color: var(--accent-color);
   border-color: var(--accent-color);
+  border: none;
+
   fill: var(--primary-white-color);
   fill-opacity: 1;
-  background-size: contain;
-  background-origin: border-box;
+  /* background-size: contain;
+  background-origin: border-box; */
 }
 
 .form-button {
